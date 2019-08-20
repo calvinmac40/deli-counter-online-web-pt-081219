@@ -14,4 +14,21 @@ end
 def line_simple(array)
   current_line = "This simple line is currently:"
   array.each.with_index(1) do |num, index|
-    current_line << "#{index}. #{num"
+    current_line << "#{index}. #{num},"
+  end
+  puts current_line
+end
+
+def take_a_number(line, new_person)
+  line.push(new_person)
+  puts "Welcome, #{new_person}. You are number #{line.length} in line."
+end
+
+def now_serving(line)
+  if line.length == 0 
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{line[0]}."
+    line.shift
+  end
+end
