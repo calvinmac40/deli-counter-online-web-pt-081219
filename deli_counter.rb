@@ -11,7 +11,7 @@ def line(array)
 end
 end
 
-line(katz_deli)
+
 
 def line_simple(array)
   current_line = "This simple line is currently:"
