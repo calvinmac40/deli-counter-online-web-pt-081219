@@ -15,7 +15,7 @@ end
 
 def line_simple(array)
   current_line = "This simple line is currently:"
-  array.each.with_index(1) do |num, index|
+  array.each.with_index(0) do |num, index|
     current_line << "#{index}. #{num},"
   end
   puts current_line
